@@ -12,7 +12,9 @@ pip install -r requirements.txt
 ## 2. Run
 
 ### CALF: 
-For Physionet 2012, train_P12.slurm is hpc slurm script, you can copy
+For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into datasets folder.
+
+train_P12.slurm is hpc slurm script, you can copy
 ```
 seq_len=2881
 model=CALF
@@ -61,4 +63,6 @@ If you want to run on other split, please change data_split_path, like change to
 train_MIMIC.slurm is for MIMIC-III. If you want to run on other random seed, please change --seed.
 
 ### Moment:
-For Physionet, you can run P12_1.sh (shell script) / P12_1.slurm (slurm script), P12_2.sh/.slurm, P12_3.sh/.slurm. For MIMIC, it is the similar as P12.
+For Physionet, For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into data folder. Then, you can run P12_1.sh (shell script) / P12_1.slurm (slurm script), P12_2.sh/.slurm, P12_3.sh/.slurm. 
+
+For MIMIC, it is the similar as P12.
