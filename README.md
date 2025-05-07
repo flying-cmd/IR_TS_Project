@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ## 2. Run
 
 ### CALF: 
-For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into datasets folder.
+For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into CALF/datasets folder.
 
 train_P12.slurm is hpc slurm script, you can copy
 ```
@@ -60,9 +60,9 @@ and add some hpc config to run.
 
 If you want to run on other split, please change data_split_path, like change to --data_split_path ./datasets/P12data/splits/phy12_split1.npy for split 1.
 
-train_MIMIC.slurm is for MIMIC-III. If you want to run on other random seed, please change --seed.
+For MIMIC, put mimic_classification folder (https://drive.google.com/drive/folders/1-Ygmbr6TQVN4BxCXkllNNZY-xxVX8iAP) into CALF/datasets/MIMIC folder, like CALF/datasets/MIMIC/mimic_classification/... train_MIMIC.slurm is for MIMIC-III. If you want to run on other random seed, please change --seed.
 
 ### Moment:
-For Physionet, For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into data folder. Then, you can run P12_1.sh (shell script) / P12_1.slurm (slurm script), P12_2.sh/.slurm, P12_3.sh/.slurm. 
+For Physionet, For Physionet 2012, firstly, you need to put P12data folder (provided by raindrop https://figshare.com/articles/dataset/P12_dataset_for_Raindrop/19514341/1?file=34683085) into moment/data folder. Then, you can run P12_1.sh (shell script) / P12_1.slurm (slurm script), P12_2.sh/.slurm, P12_3.sh/.slurm. 
 
-For MIMIC, it is the similar as P12.
+For MIMIC, put mimic_classification folder (https://drive.google.com/drive/folders/1-Ygmbr6TQVN4BxCXkllNNZY-xxVX8iAP) into moment/data/MIMIC folder, like moment/data/MIMIC/mimic_classification/... Running scripts are similar as P12.
