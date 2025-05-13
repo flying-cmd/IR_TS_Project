@@ -1,0 +1,1 @@
+This database includes 25 long-term ECG recordings of human subjects with atrial fibrillation (mostly paroxysmal). Of these, 23 records include the two ECG signals. However, the dataset is an irregular time series, which means that some values are missing. Missing values are set to zero.

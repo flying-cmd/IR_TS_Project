@@ -1,0 +1,1 @@
+The MIMIC-III dataset includes patient records with diverse physiological measurements, each sampled at irregular intervals. It contains 96 variables.
